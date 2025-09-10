@@ -1,0 +1,12 @@
+.App{
+  background-image: url(./Components/assets/background\ portfolio2.png);
+}
+
+.main {
+  margin-left: 110px; 
+}
+
+@media screen and (max-width: 1024px) {
+ .main { margin-left: 0;
+ }
+}
