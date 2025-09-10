@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.forecastcontainer {
+    
+    position: absolute;
+    margin-left: 34%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px; 
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    max-width: 850px; 
+    margin-left: 40%;
+    margin-right: 35%;
+  }
+  
+  .forecast-card {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    /* margin-top: 10%; */
+    width: 300px;
+    height: 70px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    overflow: hidden;
+  
+  }
+  
+  .forecast-card h3 {
+    margin: 1px 0;
+    font-size: 1.2rem;
+    color: #333333; /* Dark grey */
+  }
+  
+ 
+  
+  .forecast-card p {
+    font-weight: bold;
+    font-size: larger;
+    color: white; /* Dodger blue */
+  }
+
+  @media (max-width: 768px) {
+    .forecastcontainer {
+        flex-direction: row; /* Stack items vertically on smaller screens */
+        padding: 1px;
+        max-width: 90%; /* Shrink width */
+        margin-left: 22%;
+        margin-right: 17%;
+    }
+    .forecast-card {
+      flex-direction: row; 
+      width: 90%; /* Cards fill the container width */
+     padding: 2px;
+     max-height: 70px; 
+     align-items: center;
+     overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-card h3 {
+      font-size: 1rem; /* Scale down font size for smaller screens */
+  }
+
+  .forecast-card p {
+      font-size: medium;
+  }
+}
